@@ -8,18 +8,22 @@ function App() {
   const [backendData, setBackendData] = useState(null);
 
   useEffect(() => {
-    try {
-      const response = fetch('/api');
-      const responseData = response.json();
-      setBackendData(responseData);
-    } catch (error) {
-      
-    }
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/api');
+        const responseData = await response.text();
+        setBackendData(responseData);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
     <div className="App">
-      {backendData ? <p>{backendData.message}</p> : <p>Loading...</p>}
+      {backendData ? <p>{backendData}</p> : <p>Loading...</p>}
     </div>
   )
 }
