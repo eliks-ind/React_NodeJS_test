@@ -4,6 +4,42 @@
   background-color: #282e33;
 }
 
+nav {
+  padding: 10px 15px;
+  margin: 0 auto;
+  border-bottom: 1px solid #353c43;
+  display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 30px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+	max-width: 1200px;
+}
+
+.nav-ul {
+  display: flex;
+  column-gap: 40px;
+	font-size: 16px;
+}
+
+.nav-ul-li {
+  list-style: none;
+}
+
+.nav-ul-li-a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  margin-right: auto;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+
 p{
   color: white;
   margin: 0;
@@ -12,4 +48,8 @@ p{
 input {
   background-color: #2f343d;
   color: white;
+}
+
+::selection {
+  background-color: #009687;
 }
