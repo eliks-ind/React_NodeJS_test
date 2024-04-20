@@ -17,6 +17,13 @@ nav {
 	max-width: 1200px;
 }
 
+.logo {
+  margin-right: auto;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
 .nav-ul {
   display: flex;
   column-gap: 40px;
@@ -32,13 +39,9 @@ nav {
   color: white;
 }
 
-.logo {
-  margin-right: auto;
-  font-size: 24px;
-  color: white;
-  text-decoration: none;
+.ada_wong {
+  width: 100px;
 }
-
 
 p{
   color: white;

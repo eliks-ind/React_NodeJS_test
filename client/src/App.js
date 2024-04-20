@@ -26,8 +26,6 @@ function App() {
     <div className="App">
       <nav>
         <a href="#" className="logo" ><b>eliks</b> hub </a>
-        {/*<img src={ada}></img>*/}
-
         <ul className="nav-ul">
           <li className="nav-ul-li"><a href="#" className="nav-ul-li-a">Home</a></li>
           <li className="nav-ul-li"><a href="#" className="nav-ul-li-a">About</a></li>
@@ -36,7 +34,7 @@ function App() {
       </nav>
 
       <main>
-
+      <img src={ada} className="ada_wong"></img>
       </main>
 
 
