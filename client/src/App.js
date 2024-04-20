@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ada from './ada_wong.jpg'
+import leon from './leon.png'
 
 
 function App() {
@@ -24,17 +25,66 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
-        <a href="#" className="logo" ><b>eliks</b> hub </a>
+      <div className="nav-container">
+        <nav>
+        <a href="#" className="logo" >eliks <b>hub</b> </a>
         <ul className="nav-ul">
           <li className="nav-ul-li"><a href="#" className="nav-ul-li-a">Home</a></li>
           <li className="nav-ul-li"><a href="#" className="nav-ul-li-a">About</a></li>
           <li className="nav-ul-li"><a href="#" className="nav-ul-li-a">Contacts</a></li>
         </ul>
       </nav>
+      </div>
+      
 
       <main>
-      <img src={ada} className="ada_wong"></img>
+        <div className="main-container">
+          <ul className="projects">
+            <li className="project">
+              <a href="#">
+              <img src={ada} />
+              <h3 className="project-title">Ada Wong Sexy</h3>
+              </a>
+            </li>
+
+            <li className="project">
+              <a href="#">
+                <img src={leon} />
+                <h3 className="project-title">Leon Scott Kennedy</h3>
+              </a>
+            </li>
+    
+            <li className="project">
+              <a href="#">
+                <img src={leon} />
+                <h3 className="project-title">Leon Scott Kennedy</h3>
+              </a>
+            </li>
+    
+            <li className="project">
+              <a href="#">
+                <img src={leon} />
+                <h3 className="project-title">Leon Scott Kennedy</h3>
+              </a>
+            </li>
+    
+            <li className="project">
+              <a href="#">
+                <img src={leon} />
+                <h3 className="project-title">Leon Scott Kennedy</h3>
+              </a>
+            </li>
+
+            <li className="project">
+              <a href="#">
+                <img src={leon} />
+                <h3 className="project-title">Leon Scott Kennedy</h3>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      
       </main>
 
 
