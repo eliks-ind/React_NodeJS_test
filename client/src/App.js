@@ -80,51 +80,6 @@ function App() {
               </a>
             </li>
 
-            <li className="project">
-              <a href="#">
-                <div className="container-img">
-                    <img src={carlos} />
-                </div>
-                <h3 className="project-title">Carlos Olivye</h3>
-              </a>
-            </li>
-
-            <li className="project">
-              <a href="#">
-                <div className="container-img">
-                    <img src={carlos} />
-                </div>
-                <h3 className="project-title">Carlos Olivye</h3>
-              </a>
-            </li>
-
-            <li className="project">
-              <a href="#">
-                <div className="container-img">
-                    <img src={carlos} />
-                </div>
-                <h3 className="project-title">Carlos Olivye</h3>
-              </a>
-            </li>
-
-            <li className="project">
-              <a href="#">
-                <div className="container-img">
-                    <img src={carlos} />
-                </div>
-                <h3 className="project-title">Carlos Olivye</h3>
-              </a>
-            </li>
-
-            <li className="project">
-              <a href="#">
-                <div className="container-img">
-                    <img src={carlos} />
-                </div>
-                <h3 className="project-title">Carlos Olivye</h3>
-              </a>
-            </li>
-
           </ul>
         </div>
       
@@ -133,7 +88,7 @@ function App() {
             
             <h4>Comments:</h4>
             <input type='input'  />
-            <button onClick={""}>Click me</button>
+            <button className="btn comment">Click me</button>
             <ul>
               <li>
               {backendData ? <p>{backendData}</p> : <p>Loading...</p>}

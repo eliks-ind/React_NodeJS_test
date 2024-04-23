@@ -70,12 +70,16 @@ nav {
   border-radius: 10px;
   max-width: 200px;
   box-shadow: 0 0 5px rgba(94, 94, 94, 0.3);
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   text-align: center;
 }
 
 .project:hover {
   box-shadow: 0 0px 20px rgba(38, 46, 58, 1);
+}
+
+.project:hover img {
+  transform: scale(1.1);
 }
 
 .container-img {
@@ -91,6 +95,7 @@ img {
   min-height: 271.23px;
   object-fit: cover;
   border-radius: 10px;
+  transition: all 0.8s;
 }
 
 .project-title {
@@ -110,7 +115,6 @@ img {
 .comments {
   margin-right: auto;
 }
-
 
 h1, h2, h3, h4, h5, h6, p{
   color: white;
