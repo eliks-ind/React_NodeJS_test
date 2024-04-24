@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6, p{
   background-color: #0d1117;
   width: 100%;
   display: inline-block;
-  margin: auto 0;
+  padding: 0;
   border-radius: 10px;
 }
 
@@ -137,6 +137,7 @@ input {
   font-weight: 600;
   width: 96%;
   border: 0;
+  margin: 0;
 }
 
 input::placeholder {
