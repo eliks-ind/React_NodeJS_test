@@ -121,9 +121,46 @@ h1, h2, h3, h4, h5, h6, p{
   margin: 0;
 }
 
+.input-section {
+  background-color: #0d1117;
+  width: 100%;
+  display: inline-block;
+  margin: auto 0;
+  border-radius: 10px;
+}
+
 input {
-  background-color: #2f343d;
+  background-color: #0d1117;
   color: white;
+  height: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 96%;
+  border: 0;
+}
+
+input::placeholder {
+  color: rgb(95, 95, 95);
+}
+
+.arrow-right {
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.arrow-right:before {
+  content: '';
+  position: absolute;
+  top: 65%;
+  width: 0;
+  height: 0;
+  margin-top: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid rgb(77, 77, 77);
 }
 
 ::selection {

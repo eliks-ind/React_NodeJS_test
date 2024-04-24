@@ -87,8 +87,10 @@ function App() {
           <div className="comments">
             
             <h4>Comments:</h4>
-            <input type='input'  />
-            <button className="btn comment">Click me</button>
+            <div className="input-section">
+              <input type='input' placeholder="Enter the text..." />
+              <a href="#" className="arrow-right"></a>
+            </div>
             <ul>
               <li>
               {backendData ? <p>{backendData}</p> : <p>Loading...</p>}
