@@ -154,7 +154,7 @@ img {
 input {
   background-color: #0d1117;
   color: white;
-  height: 20px;
+  height: 35px;
   font-size: 15px;
   font-weight: 600;
   width: 96%;
@@ -169,26 +169,26 @@ input::placeholder {
 }
 
 .arrow-right {
-  height: 20px;
+  content: '';
+  height: 10px;
   position: absolute;
   display: inline-block;
   cursor: pointer;
   margin: auto 5px;
-}
-
-.arrow-right:before {
-  content: '';
-  position: absolute;
-  top: 50%;
   width: 0;
   height: 0;
-  margin-top: -7px;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid rgb(77, 77, 77);
+  margin-top: 6.5px;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  border-left: 12.5px solid rgb(77, 77, 77);
+  transition: all 0.3s ease;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+.arrow-right:hover {
+  border-left-color: #009687;
+}
+
+h1, h2, h3, h4, h5, h6, p, img{
   color: white;
   margin: 0;
   pointer-events: none;
