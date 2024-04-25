@@ -43,7 +43,7 @@ function App() {
       <main>
         <div className="main-container">
           <ul className="projects">
-            <li className="project">
+            <li className="project ada">
               <a href="#">
                 <div className="container-img">
                   <img src={ada_png} />
@@ -52,7 +52,7 @@ function App() {
               </a>
             </li>
 
-            <li className="project">
+            <li className="project leon">
               <a href="#">
                 <div className="container-img">
                     <img src={leon} />
@@ -62,21 +62,21 @@ function App() {
               </a>
             </li>
     
-            <li className="project">
+            <li className="project jill">
               <a href="#">
                 <div className="container-img">
                     <img src={jill} />
                 </div>
-                <h3 className="project-title">Jim ValenValve</h3>
+                <h3 className="project-title">Jill Valentine</h3>
               </a>
             </li>
     
-            <li className="project">
+            <li className="project carlos">
               <a href="#">
                 <div className="container-img">
                     <img src={carlos} />
                 </div>
-                <h3 className="project-title">Carlos Olivye</h3>
+                <h3 className="project-title">Carlos Oliveira</h3>
               </a>
             </li>
 

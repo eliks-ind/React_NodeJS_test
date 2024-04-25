@@ -65,6 +65,15 @@ nav {
   padding: 0;
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .project {
   background-color: #0d1117;
   border-radius: 10px;
@@ -72,6 +81,23 @@ nav {
   box-shadow: 0 0 5px rgba(94, 94, 94, 0.3);
   transition: all 0.3s ease;
   text-align: center;
+  opacity: 0;
+}
+
+.ada {
+  animation: fade 1s ease-in forwards;
+}
+
+.leon {
+  animation: fade 1.5s ease-in forwards;
+}
+
+.jill {
+  animation: fade 2s ease-in forwards;
+}
+
+.carlos {
+  animation: fade 2.5s ease-in forwards;
 }
 
 .project:hover {
@@ -96,6 +122,7 @@ img {
   object-fit: cover;
   border-radius: 10px;
   transition: all 0.8s;
+  pointer-events: none;
 }
 
 .project-title {
@@ -116,11 +143,6 @@ img {
   margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-  color: white;
-  margin: 0;
-}
-
 .input-section {
   background-color: #0d1117;
   width: 100%;
@@ -136,8 +158,10 @@ input {
   font-size: 15px;
   font-weight: 600;
   width: 96%;
+  min-width: 10px;
   border: 0;
   margin: 0;
+  outline: none;
 }
 
 input::placeholder {
@@ -146,22 +170,28 @@ input::placeholder {
 
 .arrow-right {
   height: 20px;
-  position: relative;
+  position: absolute;
   display: inline-block;
   cursor: pointer;
-  margin: auto 0;
+  margin: auto 5px;
 }
 
 .arrow-right:before {
   content: '';
   position: absolute;
-  top: 65%;
+  top: 50%;
   width: 0;
   height: 0;
-  margin-top: -10px;
+  margin-top: -7px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid rgb(77, 77, 77);
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  color: white;
+  margin: 0;
+  pointer-events: none;
 }
 
 ::selection {
@@ -181,6 +211,5 @@ input::placeholder {
 
 ::-webkit-scrollbar-thumb {
   background-color: #009687;
-  /* background: linear-gradient(red, orange, yellow, green, lightblue, blue, purple); */
   border-radius: 50px;
 }
