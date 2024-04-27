@@ -89,7 +89,9 @@ function App() {
             <h4>Comments:</h4>
             <div className="input-section">
               <input type='input' placeholder="Enter the text..." />
-              <a href="#" className="arrow-right" />
+              <div className='arrow-right-container'>
+                <a href="#" className="arrow-right" />
+              </div>
             </div>
             <ul>
               <li>

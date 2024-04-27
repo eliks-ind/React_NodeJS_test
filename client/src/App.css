@@ -32,6 +32,7 @@ nav {
 
 .hub {
   background-color: #009687;
+  border-radius: 5px;
 }
 
 .nav-ul {
@@ -148,7 +149,7 @@ img {
   width: 100%;
   display: inline-block;
   padding: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 input {
@@ -157,8 +158,9 @@ input {
   height: 35px;
   font-size: 15px;
   font-weight: 600;
-  width: 96%;
+  width: 90%;
   min-width: 10px;
+  border-radius: 20px;
   border: 0;
   margin: 0;
   outline: none;
@@ -168,16 +170,20 @@ input::placeholder {
   color: rgb(95, 95, 95);
 }
 
+.arrow-right-container {
+  position: relative;
+  float: right;
+}
+
 .arrow-right {
   content: '';
   height: 10px;
   position: absolute;
-  display: inline-block;
   cursor: pointer;
-  margin: auto 5px;
+  right: 10px;
   width: 0;
   height: 0;
-  margin-top: 6.5px;
+  top: 6px;
   border-top: 12.5px solid transparent;
   border-bottom: 12.5px solid transparent;
   border-left: 12.5px solid rgb(77, 77, 77);
