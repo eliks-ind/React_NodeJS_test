@@ -101,6 +101,18 @@ nav {
   animation: fade 2.5s ease-in forwards;
 }
 
+.albert {
+  animation: fade 2.5s ease-in forwards;
+}
+
+.sherry {
+  animation: fade 2.5s ease-in forwards;
+}
+
+.annette {
+  animation: fade 2.5s ease-in forwards;
+}
+
 .project:hover {
   box-shadow: 0 0px 20px rgba(38, 46, 58, 1);
 }

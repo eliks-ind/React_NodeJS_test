@@ -6,6 +6,9 @@ import ada_png from './ada_wong.png'
 import leon from './leon.png'
 import jill from './jill.png'
 import carlos from './carlos.png'
+import albert from './albert.png'
+import sherry from './sherry.jpg'
+import annette from './annette.png'
 
 
 function App() {
@@ -77,6 +80,33 @@ function App() {
                     <img src={carlos} />
                 </div>
                 <h3 className="project-title">Carlos Oliveira</h3>
+              </a>
+            </li>
+
+            <li className="project albert">
+              <a href="#">
+                <div className="container-img">
+                    <img src={albert} />
+                </div>
+                <h3 className="project-title">Albert Wesker</h3>
+              </a>
+            </li>
+
+            <li className="project sherry">
+              <a href="#">
+                <div className="container-img">
+                    <img src={sherry} />
+                </div>
+                <h3 className="project-title">Sherry Birkin</h3>
+              </a>
+            </li>
+
+            <li className="project annette">
+              <a href="#">
+                <div className="container-img">
+                    <img src={annette} />
+                </div>
+                <h3 className="project-title">Annette Birkin</h3>
               </a>
             </li>
 
